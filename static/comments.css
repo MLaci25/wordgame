@@ -1,0 +1,155 @@
+
+body
+{
+margin-left:25%;
+text-align:center;
+font-family:      Tahoma,Verdana,Arial,Sans-serif;
+font-size:        20px;
+font-weight:      bold;
+line-height: 1.3em;margin:0;padding:0
+}
+#grad
+{
+height:100%;
+background: -webkit-radial-gradient(yellow,orange); /* For Safari 5.1 to 6.0 */
+background: -o-radial-gradient(yellow,orange); /* For Opera 11.1 to 12.0 */
+background: -moz-radial-gradient(yellow, orange); /* For Firefox 3.6 to 15 */
+background: radial-gradient(yellow,orange); /* Standard syntax */
+}
+a {
+  text-decoration:  none;
+  font-weight:      600;
+  color:            #3366CC;
+}
+a:hover {
+  text-decoration:  underline;
+}
+a img {
+  border:           0;
+}
+h1 {
+  padding-top: 2cm ;
+  font-weight:      normal;
+  color:            #3366CC;
+  font-size:        150%;
+}
+table {
+  margin-left:      20px;
+  margin-right:     20px;
+  caption-side:     bottom;
+  border-collapse:  collapse;
+
+}
+td, th {
+  padding:          5px;
+  text-align:       left;
+}
+textarea {
+  font-family:      Verdana, Geneva, Arial, sans-serif;
+}
+.copyright {
+  font-size:        90%;
+  font-style:       italic;
+  color:            #3366CC;
+}
+.slogan {
+  font-size:        75%;
+  font-style:       italic;
+}
+
+/*** Tables ***/
+
+table
+{
+margin-left:28%;
+padding:0px;
+text-align:center;
+font-size:1em;
+border-style:hidden;
+}
+h2{
+    padding-top: 1cm ;
+    margin:0 0 20px;
+    font-family: 'Droid Serif', serif;
+    color:#666;
+    line-height:normal;
+    font-size: 30px;
+	line-height: 14px;
+	letter-spacing: 2px;
+	font-weight: Normal;
+}
+
+p
+{
+    font-family: 'Droid Serif', serif;
+    color:#6667;
+    font-weight: Normal;
+    font-size: 1.2em;
+
+}
+p.thin
+{
+    font-weight: 400%;
+}
+
+td, th {
+border: thin dotted gray;
+}
+
+/*** Inputs ***/
+input[type=text] {
+  font-size:    115%
+}
+input[type=submit] {
+  font-size:    115%
+}
+input[type=clear] {
+  font-size:    115%
+}
+select {
+  font-size:    125%
+}
+.button {
+	-moz-box-shadow:inset 0px 1px 0px 0px #bee2f9;
+	-webkit-box-shadow:inset 0px 1px 0px 0px #bee2f9;
+	box-shadow:inset 0px 1px 0px 0px #bee2f9;
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #63b8ee), color-stop(1, #468ccf) );
+	background:-moz-linear-gradient( center top, #63b8ee 5%, #468ccf 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#63b8ee', endColorstr='#468ccf');
+	background-color:#63b8ee;
+	-webkit-border-top-left-radius:0px;
+	-moz-border-radius-topleft:0px;
+	border-top-left-radius:0px;
+	-webkit-border-top-right-radius:0px;
+	-moz-border-radius-topright:0px;
+	border-top-right-radius:0px;
+	-webkit-border-bottom-right-radius:0px;
+	-moz-border-radius-bottomright:0px;
+	border-bottom-right-radius:0px;
+	-webkit-border-bottom-left-radius:0px;
+	-moz-border-radius-bottomleft:0px;
+	border-bottom-left-radius:0px;
+	text-indent:0;
+	border:1px solid #3866a3;
+	display:inline-block;
+	color:#14396a;
+	font-family:Times New Roman;
+	font-size:15px;
+	font-weight:bold;
+	font-style:normal;
+	height:65px;
+	line-height:15px;
+	width:180px;
+	text-decoration:none;
+	text-align:center;
+	text-shadow:1px 1px 0px #7cacde;
+}
+.button:hover {
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #468ccf), color-stop(1, #63b8ee) );
+	background:-moz-linear-gradient( center top, #468ccf 5%, #63b8ee 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#468ccf', endColorstr='#63b8ee');
+	background-color:#468ccf;
+}.button:active {
+	position:relative;
+	top:1px;
+}

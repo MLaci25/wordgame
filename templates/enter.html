@@ -1,0 +1,37 @@
+
+{% extends "base.html" %}
+
+{% block the_body %}
+
+<form action="{{ the_save_url }}" method="POST">
+
+    {% with messages = get_flashed_messages() %}
+        {% if messages %}
+            <ul>
+                {% for message in messages %}
+                    <li>{{ message }}
+                {% endfor %}
+            </ul>
+        {% endif %}
+    {% endwith %}
+    <p class="thick">Enter 7 words that you can make out from the source word.<br>
+					 Note: Duplicate words are automatically marked INVALID<br>
+		             The requested format for the inputs: They must be at least 3 characters long<br> 
+		             The words inputted will be converted into lowercase </p>
+<table>
+    <tr><td><p>Source word:<p></td><td> {{ the_source }}</td> </tr>
+
+    <tr><td>Word 1</td> <td><input type="TEXT" name="word_one" required pattern="^[a-zA-Z]{3,20}$" autocomplete="off"></td> </tr>
+    <tr><td>Word 2</td> <td><input type="TEXT" name="word_two" required pattern="^[a-zA-Z]{3,20}$" autocomplete="off"></td> </tr>
+    <tr><td>Word 3</td> <td><input type="TEXT" name="word_three" required pattern="^[a-zA-Z]{3,20}$" autocomplete="off"></td> </tr>
+    <tr><td>Word 4</td> <td><input type="TEXT" name="word_four" required pattern="^[a-zA-Z]{3,20}$" autocomplete="off"></td> </tr>
+    <tr><td>Word 5</td> <td><input type="TEXT" name="word_five" required pattern="^[a-zA-Z]{3,20}$" autocomplete="off"></td> </tr>
+    <tr><td>Word 6</td> <td><input type="TEXT" name="word_six" required pattern="^[a-zA-Z]{3,20}$" autocomplete="off"></td> </tr>
+    <tr><td>Word 7</td> <td><input type="TEXT" name="word_seven" required pattern="^[a-zA-Z]{3,20}$" autocomplete="off"></td> </tr>
+    <tr><td></td> <td><input type="SUBMIT" value="Submit Answers" class='button'></td> </tr>
+</table>
+
+
+</form>
+
+{% endblock %}

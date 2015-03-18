@@ -1,0 +1,25 @@
+
+{% extends "base.html" %}
+
+{% block the_body %}
+
+<form action="{{ the_name_url }}" method="POST">
+
+    {% with messages = get_flashed_messages() %}
+        {% if messages %}
+            <ul>
+                {% for message in messages %}
+                    <li>{{ message }}
+                {% endfor %}
+            </ul>
+        {% endif %}
+    {% endwith %}
+<table>
+    <tr><td>Enter Name</td> <td><input type="TEXT" name="player_name" required pattern="^[a-zA-Z]{3,20}$"></td> </tr>
+    <tr><td></td> <td><input type="SUBMIT" value="Submit Name" class='button'></td> </tr>
+</table>
+
+
+</form>
+
+{% endblock %}

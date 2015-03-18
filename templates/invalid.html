@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+
+{% block the_body %}
+
+<p>
+Your words were incorrect, you will not get on the leaderboard!!!!.
+</p>
+<p>
+Here is the result
+</p>
+{% for word,res in the_words_results %}
+
+<p>
+{{ word }} is {{res}}
+</p>
+{% endfor %}
+
+<p>
+Please come back soon.
+</p>
+
+Return to <a href=" {{ home_link }}" >Home</a>
+
+{% endblock %}

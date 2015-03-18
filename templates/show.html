@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+{% block the_body %}
+
+
+{% for time,name in the_data %}
+
+{{loop.index}} {{ name }} got {{ time}}<br>
+
+
+{% endfor %}
+<br>
+Return to <a href="{{ home_link }}">Home</a>
+
+{% endblock %}

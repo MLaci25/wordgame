@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+
+{% block the_body %}
+
+<p>
+Congratulations, all of your words were correct!!! 
+ </p>
+<p>
+Thanks for playing the game {{ the_player }}
+</p>
+<p>
+Your time was {{ the_time }} seconds
+</p>
+<p>
+Please come back soon.
+</p>
+
+Return to <a href=" {{ home_link }}" >Home</a>
+
+{% endblock %}
