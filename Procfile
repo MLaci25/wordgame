@@ -1,1 +1,1 @@
-web : gunicorn wordgame.py:app
+web : gunicorn wordgame:app
