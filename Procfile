@@ -1,1 +1,2 @@
 web: gunicorn wordgame:app
+
