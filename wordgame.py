@@ -1,6 +1,6 @@
 #Laszlo Malina
-#Wordgame Assignment
-#14/11/2014
+#Wordgame Assignment 3
+#14/03/2015
 
 
 from flask import Flask, render_template, url_for, request, redirect, flash, session
